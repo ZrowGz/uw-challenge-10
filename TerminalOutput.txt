@@ -1,0 +1,367 @@
+Last login: Wed Oct 20 16:36:07 on ttys000
+(base) zrowgz@Eamons-MacBook-Pro ~ % cd Desktop/fintech-workspace
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % git pull https://github.com/zcor/uw_fintech_21.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 35 (delta 7), reused 35 (delta 7), pack-reused 0
+Unpacking objects: 100% (35/35), 1.43 MiB | 101.00 KiB/s, done.
+From https://github.com/zcor/uw_fintech_21
+ * branch            HEAD       -> FETCH_HEAD
+Updating 1dba2fe..4e2d950
+Fast-forward
+ .../2/Activities/01-Ins_Preprocessing/README.md    |    5 +
+ .../Resources/cc_info_default.csv                  | 5000 ++++++++++++++++++++
+ .../Solved/cc_preprocessing.ipynb                  | 2541 ++++++++++
+ .../Unsolved/cc_preprocessing.ipynb                |  272 ++
+ .../02-Stu_Segmenting_Customer_Data/README.md      |   21 +
+ .../Resources/customers.csv                        | 1001 ++++
+ .../Solved/segmenting_customer_data.ipynb          | 2237 +++++++++
+ .../Unsolved/segmenting_customer_data.ipynb        | 2217 +++++++++
+ .../2/Activities/03-Ins_PCA/README.md              |    5 +
+ .../03-Ins_PCA/Resources/ccinfo_transformed.csv    | 5000 ++++++++++++++++++++
+ .../2/Activities/03-Ins_PCA/Solved/pca.ipynb       | 2214 +++++++++
+ .../2/Activities/03-Ins_PCA/Unsolved/pca.ipynb     | 2206 +++++++++
+ .../04-Stu_Segmenting_with_PCA/README.md           |   35 +
+ .../Resources/customers.csv                        | 1001 ++++
+ .../Solved/segmenting_with_pca.ipynb               | 2228 +++++++++
+ .../Unsolved/segmenting_with_pca.ipynb             | 2210 +++++++++
+ 16 files changed, 28193 insertions(+)
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/01-Ins_Preprocessing/README.md
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/01-Ins_Preprocessing/Resources/cc_info_default.csv
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/01-Ins_Preprocessing/Solved/cc_preprocessing.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/01-Ins_Preprocessing/Unsolved/cc_preprocessing.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/02-Stu_Segmenting_Customer_Data/README.md
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/02-Stu_Segmenting_Customer_Data/Resources/customers.csv
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/02-Stu_Segmenting_Customer_Data/Solved/segmenting_customer_data.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/02-Stu_Segmenting_Customer_Data/Unsolved/segmenting_customer_data.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/03-Ins_PCA/README.md
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/03-Ins_PCA/Resources/ccinfo_transformed.csv
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/03-Ins_PCA/Solved/pca.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/03-Ins_PCA/Unsolved/pca.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/04-Stu_Segmenting_with_PCA/README.md
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/04-Stu_Segmenting_with_PCA/Resources/customers.csv
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/04-Stu_Segmenting_with_PCA/Solved/segmenting_with_pca.ipynb
+ create mode 100644 Activities/10-Unsupervised-Learning/2/Activities/04-Stu_Segmenting_with_PCA/Unsolved/segmenting_with_pca.ipynb
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % cd w10
+cd: no such file or directory: w10
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % ls
+Activities			submission-cli 1.27.28 PM.txt
+Quandl_API_Key			w1
+README.md			w10  
+Simulation-1			w2
+career_skills			w3
+classwork			w4
+jupyternotes.ipynb		w5
+p1				w6
+p1 not included in repo		w7
+python_project
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % cd w10
+cd: no such file or directory: w10
+(base) zrowgz@Eamons-MacBook-Pro fintech-workspace % cd w10\ \  
+(base) zrowgz@Eamons-MacBook-Pro w10   % ls
+10-2-4-kmeans		10-4-4-pcaStockCluster	uw-challenge-10
+10-3-3-find-k		c1
+10-4-2-pca		c2
+(base) zrowgz@Eamons-MacBook-Pro w10   % cd uw-challenge-10 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/zrowgz/Desktop/fintech-workspace/w10  /uw-challenge-10/.git/
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git pull git@github.com:ZrowGz/uw-challenge-10.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.57 KiB | 201.00 KiB/s, done.
+From github.com:ZrowGz/uw-challenge-10
+ * branch            HEAD       -> FETCH_HEAD
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git statujs
+git: 'statujs' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Resources/
+	crypto_investments.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git add . 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git commit -m "Initial code"
+[master 83cc070] Initial code
+ 3 files changed, 2761 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 Resources/crypto_market_data.csv
+ create mode 100644 crypto_investments.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git remote add git@github.com:ZrowGz/uw-challenge-10.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push uw-challenge-10
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream uw-challenge-10 master
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push --set-upstream uw-challenge-10 main
+error: src refspec main does not match any
+error: failed to push some refs to 'uw-challenge-10'
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push uw-challenge-10 git@github.com:ZrowGz/uw-challenge-10.git
+error: src refspec git@github.com does not match any
+error: failed to push some refs to 'uw-challenge-10'
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git pull git@github.com:ZrowGz/uw-challenge-10.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+From github.com:ZrowGz/uw-challenge-10
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push git@github.com:ZrowGz/uw-challenge-10.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git@github.com:ZrowGz/uw-challenge-10.git master
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push --set-upstream git@github.com:ZrowGz/uw-challenge-10.git main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:ZrowGz/uw-challenge-10.git'
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push --set-upstream git@github.com:ZrowGz/uw-challenge-10.git    
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git@github.com:ZrowGz/uw-challenge-10.git master
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git status                  
+On branch master
+nothing to commit, working tree clean
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git checkout -b main
+Switched to a new branch 'main'
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git merge master
+Already up to date.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git branch -m master main
+fatal: A branch named 'main' already exists.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git delete main
+git: 'delete' is not a git command. See 'git --help'.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git checkout master
+Switched to branch 'master'
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git branch -d main
+Deleted branch main (was 83cc070).
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git branch -m master main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git status
+On branch main
+nothing to commit, working tree clean
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push 
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git remote add main git@github.com:ZrowGz/uw-challenge-10.git
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push 
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push main
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream main main
+
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push --set-upstream main main
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 980.06 KiB | 6.16 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:ZrowGz/uw-challenge-10.git
+   3317798..83cc070  main -> main
+Branch 'main' set up to track remote branch 'main' from 'main'.
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % ls
+README.md			crypto_investments.ipynb
+Resources
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % ls
+README.md			Resources			crypto_investments.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git status
+On branch main
+Your branch is up to date with 'main/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   crypto_investments.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % ls 
+README.md			Resources			crypto_investments.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % ls -a
+.				.DS_Store			.ipynb_checkpoints		crypto_investments.ipynb
+..				.git				README.md
+..txt				.gitignore			Resources
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % delete ..txt
+zsh: command not found: delete
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % rm ..txt
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % ls -a
+.				.git				README.md
+..				.gitignore			Resources
+.DS_Store			.ipynb_checkpoints		crypto_investments.ipynb
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git status
+On branch main
+Your branch is up to date with 'main/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   crypto_investments.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git add . 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git commit -m "Complete analysis"
+[main d50ce4b] Complete analysis
+ 1 file changed, 1530 insertions(+), 230 deletions(-)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git push
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 26.58 KiB | 544.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:ZrowGz/uw-challenge-10.git
+   83cc070..d50ce4b  main -> main
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git add . 
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git committ -m "Completed README"
+git: 'committ' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % git commit -m "Completed README"
+[main 13202a0] Completed README
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+(base) zrowgz@Eamons-MacBook-Pro uw-challenge-10 % 
