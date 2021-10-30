@@ -10,11 +10,11 @@ Utilize unsupervised machine learning to analyze various cryptocurrency investme
 
 ## Requirements
 
-Python 3.7
-Pandas
-hvPlot
-sklearn
-pathlib
+Python 3.7  
+Pandas  
+hvPlot  
+sklearn  
+pathlib  
 
 --- 
 
